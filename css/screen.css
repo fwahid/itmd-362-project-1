@@ -13,3 +13,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   Setting type to a major third modular scale
   http://www.modularscale.com/?1&em&1.25&web&text
 */
+
+html {
+  color: white;
+  background-color: #223843;
+  font-family: Depot New W00;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
+}
+
+#page {
+  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
+}
+nav {
+  display: block;
+}
+
+h1 {
+  font-size: 2.441em; /* 43.945px @ 18px em */
+  line-height: 1.536em; /* 67.5px @ 43.945px em */
+  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+}
