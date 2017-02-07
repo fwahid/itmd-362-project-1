@@ -46,4 +46,33 @@ h1 {
   padding-bottom: 0.9375em;
 }
 
+input, text, email {
+  width: 100%;
+  padding: 0.9375em;
+  border-radius: 0.3125em;
+  border-style: none;
+  font-size: 0.9375em;
+}
+
+label, name {
+  padding-bottom: 0.9375em;
+  float: left;
+}
+
+.button {
+  font-weight: 320;
+  text-align: center;
+  background-color: gray;
+}
+
+.button:hover {
+   background-color: #382243;
+}
+
+.submit-button {
+  padding-top: 1.864em;
+  width: 6.44em;
+  padding-left: 2.33em;
+}
+
 /* ===== STATE STYLES ===== */
