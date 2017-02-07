@@ -20,6 +20,7 @@ html {
   font-family: Depot New W00;
   font-size: 1.125em; /* 18px */
   line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
+  text-align: center;
 }
 
 #page {
@@ -68,9 +69,12 @@ label, name {
 
 .button:hover {
    background-color: #382243;
+   text-align: center;
 }
 
 .submit-button {
+  font-size: 1.125em; /* 18px */
+  line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
   padding-top: 1.864em;
   width: 6.44em;
   padding-left: 2.33em;
