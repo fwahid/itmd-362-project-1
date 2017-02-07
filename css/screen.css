@@ -34,3 +34,16 @@ h1 {
   line-height: 1.536em; /* 67.5px @ 43.945px em */
   padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
 }
+
+/* ===== LAYOUT STYLES ===== */
+
+.register {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.name {
+  padding-bottom: 0.9375em;
+}
+
+/* ===== STATE STYLES ===== */
