@@ -36,6 +36,12 @@ h1 {
   padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
 }
 
+h2 {
+  font-size: 1.866em; 
+  line-height: 1.536em; 
+  padding-bottom: 0.512em; 
+}
+
 /* ===== LAYOUT STYLES ===== */
 
 .register {

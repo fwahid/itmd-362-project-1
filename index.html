@@ -18,12 +18,15 @@
 		</ul>
 		
     <form action="#null" class="register" method="post">
-      <div>
         <label for="email">E-mail:</label> <input id="email" name="Email" placeholder="example@me.com" required="" type="email">
-      </div>
-      <div class="submit-button">
+				<input list="type">
+		<datalist id="type">
+    <option value="Car Reviews">
+    <option value="How-to">
+    <option value="Interviews">
+    <option value="Comedy">
+  </datalist>
         <input class="button" type="submit" value="Sign Up">
-      </div>
     </form>
   </main> 
   <script src="js/site.js"></script>
