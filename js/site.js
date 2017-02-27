@@ -7,7 +7,7 @@ $.noConflict();
         if($.trim($' && '#email').val()) === ' ') {
           alert('Please fill missing information');
         }
-        $("#submit-button").click(function(){
+        $("#button").click(function(){
         alert('Thank You! Your form has been submitted');
         }
     }
