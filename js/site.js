@@ -7,4 +7,10 @@ $.noConflict();
         if($.trim($' && '#email').val()) === ' ') {
           alert('Please fill missing information');
         }
+        else if 
+        $("#submit-button").click(function(){
+        alert('Thank You! Your form has been submitted');
+        }
+    }
+  }
       event.preventDefault();
