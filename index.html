@@ -19,20 +19,8 @@
       </ul>
       <h3>So, are YOU ready to enter the world of cars?</h3>
     </section>
-    <form action="#null" class="register" method="post">
-      <ul>
-        <li><label for="email">E-mail:</label> <input id="email" name="Email" placeholder="example@me.com" required="" type="email"> <input list="type"></li>
-      </ul>
-      <p>Select the type of newsletter you would like to receive</p><datalist id="type">
-        <option value="Car Reviews">
-        </option>
-        <option value="How-to">
-        </option>
-        <option value="Interviews">
-        </option>
-        <option value="Comedy">
-        </option>
-      </datalist> <input class="button" type="submit" value="Sign Up">
+    <form action="#null" class="register" id="user-form" method="get" name="user-form">
+      <span class="name"><label for="name">Name:</label> <input id="name" name="name" placeholder="Full name" type="text"></span> <span><label for="email">E-mail:</label> <input id="email" name="Email" placeholder="example@me.com" type="email"></span> <span class="submit-button"><input class="button" type="submit" value="Sign-up"></span>
     </form>
   </main>
   <script src="js/site.js">
