@@ -63,6 +63,10 @@ li {
   padding-bottom: 0.9375em;
 }
 
+category {
+  
+}
+
 input, text, email {
   width: 100%;
   padding: 0.9375em;
@@ -72,6 +76,7 @@ input, text, email {
 }
 
 label, name {
+  padding-top: 2.334em;
   padding-bottom: 0.9375em;
   float: left;
 }
@@ -81,7 +86,7 @@ label, name {
   font-weight: 320;
   text-align: center;
   background-color: gray;
-  width: 6.5em;
+  width: 8em;
   padding-top:1em;
   padding-bottom:1em;
 }
