@@ -42,6 +42,16 @@ h2 {
   padding-bottom: 0.512em; 
 }
 
+ul {
+  padding-top: 0.625em;
+  padding-bottom: 1.25em; /* 22.5px : html line-height */
+}
+
+li {
+  padding-bottom: 0.625em; /* 11.25px @ 18px em */
+  font-size: 1.233em;
+}
+
 /* ===== LAYOUT STYLES ===== */
 
 .register {
@@ -83,3 +93,50 @@ label, name {
 
 
 /* ===== STATE STYLES ===== */
+
+/* Mobile Phone */
+@media screen and (min-width: 10em) and (max-width: 30em)
+{
+  body {
+    font-size: 0.876em;
+    width: 100%;
+  }
+
+  header {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 2.3em;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+/* Tablet/Notebook(small) */
+@media screen and (min-width: 30em) and (max-width: 60em)
+{
+  body {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-size: 1em;
+  }
