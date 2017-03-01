@@ -17,6 +17,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html{
   color: white;
   background-color: #223843;
+  background-image: url("../img/carbon.jpeg");
   font-family: Depot New W00;
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.2em; /* 18 x 120% = 21.6px */
@@ -77,13 +78,30 @@ ol{
 #input-submit input{
   display: block;
   border:0 none;
-  border : solid 5px;
+  border : solid;
   border-color: black;
   margin: .6em 0;
   background-color: lightgray;
   padding: .6em;
 }
 
+#background-img img{
+  position: absolute;
+  opacity: .5;
+  pointer-events: none;
+    /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 /* ===== LAYOUT STYLES ===== */
 
 .register {
