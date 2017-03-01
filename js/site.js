@@ -1,15 +1,16 @@
 $.noConflict();
-(function($) {
-  $(document).ready(function() {
-    $('#form').on('submit', function(event) {
-      var input + $('#email').val();
-      console.log(input);
-        if($.trim($' && '#email').val()) === ' ') {
-          alert('Please fill missing information');
-        }
-        $("#button").click(function(){
-        alert('Thank You! Your form has been submitted');
-        }
+
+jQuery(function($) {
+  $('#user-form').on('submit', function(event) {
+      
+    var emailInput = $('#email').val();
+    console.log(emailInput);
+    
+    if($.trim($('#email').val()) === '') {
+      alert('Please fill out all fields');
     }
-  }
-      event.preventDefault();
+      
+    event.preventDefault();
+      
+  });
+});
