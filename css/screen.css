@@ -15,29 +15,31 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html{
-  color: white;
+  color: orange;
   background-color: #223843;
-  background-image: url("../img/carbon.jpeg");
-  font-family: Depot New W00;
+  font-family: Lucida Sans Typewriter;
   font-size: 1.125em; /* 18px/16px */
   line-height: 1.2em; /* 18 x 120% = 21.6px */
   padding: 3.3375% 3.4375%; /* 22px /2 = 11px 11/320=0.034375 */ 
 }
 
 h1{
-  font-family: Raleway, serif;
+  font-family: Lucida Sans Typewriter, serif;
   font-size: 2.441em; /* 43.945px @ 18px em */
   line-height: 1.536em; /* 67.5px @ 43.945px em */
   padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
   text-align: center;
   margin-bottom: 0.5919em;
-  border: .2959em;
+  border: .2959em double;
   border-radius: .2959em;
   border-color: black;
+  background-color:black;
+  color: orange;
 }
 
 h2 {
-  font-size: 1.866em; 
+  font-size: 1.866em;
+  color: orange ;  
   line-height: 1.536em; 
   padding-bottom: 0.512em; 
 }
@@ -72,7 +74,6 @@ ol{
 
 #input-frequent input{
   float: left; 
-  text-align: center;
 }
 
 #input-submit input{
@@ -104,18 +105,6 @@ ol{
 }
 /* ===== LAYOUT STYLES ===== */
 
-.register {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.name {
-  padding-bottom: 0.9375em;
-}
-
-category {
-  
-}
 
 input, text, email {
   width: 100%;
@@ -141,9 +130,25 @@ label, name {
   padding-bottom:1em;
 }
 
-.button:hover {
-   background-color: #382243;
+.input-submit:hover {
+   background-color: black;
    text-align: center;
+}
+
+.circle {
+  display: inline;
+  float: left;
+  margin-left: 1.25em; /* 20px */
+}
+
+.reasons-list {
+  margin-left: 1.25em; /* 18px */
+  margin-right: 1.25em; /* 18px */
+  line-height: 1.56em;  /* 25px */
+  font-weight: 400;
+  font-size: 1.1875em; /* 19px */
+  padding-bottom: 1.625em; /* 26 px */
+  text-align: left;
 }
 
 
@@ -164,12 +169,12 @@ label, name {
 
   h1{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
   
   h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.9em;
   }
 
   img {
@@ -177,6 +182,22 @@ label, name {
     height: auto;
   }
   
+  .circle {
+  display: inline;
+  float: left;
+  width: 10%;
+  }
+  
+  .reasons-list {
+  margin-left: 1.25em; /* 18px */
+  margin-right: 1.25em; /* 18px */
+  line-height: 1.56em;  /* 25px */
+  font-weight: 400;
+  font-size: 1.1875em; /* 19px */
+  padding-bottom: 1.625em; /* 26 px */
+  text-align: left;
+  }
+}  
   
 /* Tablet/Notebook(small) */
 @media screen and (min-width: 30em) and (max-width: 60em)
@@ -195,3 +216,4 @@ label, name {
     text-align: center;
     font-size: 1em;
   }
+}
