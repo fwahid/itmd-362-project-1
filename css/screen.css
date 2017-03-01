@@ -26,6 +26,10 @@ html {
 #page {
   padding: 1.25em 1.25em; /* 22.5px @ 18px em */
 }
+
+content {
+  background-image: url("../img/carbon.JPEG");
+}
 nav {
   display: block;
 }
