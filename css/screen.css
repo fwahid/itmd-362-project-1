@@ -164,7 +164,6 @@ label, name {
 	color: red;
 }
 
-
 /* Mobile Phone */
 @media screen and (min-width: 10em) and (max-width: 30em)
 {
