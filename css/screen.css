@@ -2,63 +2,97 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
 /* stylelint-disable */
+
+
 /* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block
+}
+body {
+  line-height: 1
+}
+ol, ul {
+  list-style: none
+}
+blockquote, q {
+  quotes: none
+}
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
 /* stylelint-enable */
 
+
 /* ===== BASE STYLES ===== */
+
 
 /*
   Setting type to a major third modular scale
   http://www.modularscale.com/?1&em&1.25&web&text
 */
 
-html{
+html {
   color: orange;
   background-color: #223843;
   font-family: Lucida Sans Typewriter;
-  font-size: 1.125em; /* 18px/16px */
-  line-height: 1.2em; /* 18 x 120% = 21.6px */
-  padding: 3.3375% 3.4375%; /* 22px /2 = 11px 11/320=0.034375 */ 
+  font-size: 1.125em;
+  /* 18px/16px */
+  line-height: 1.2em;
+  /* 18 x 120% = 21.6px */
+  padding: 3.3375% 3.4375%;
+  /* 22px /2 = 11px 11/320=0.034375 */
 }
-
-h1{
+h1 {
   font-family: Lucida Sans Typewriter, serif;
-  font-size: 2.441em; /* 43.945px @ 18px em */
-  line-height: 1.536em; /* 67.5px @ 43.945px em */
-  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+  font-size: 2.441em;
+  /* 43.945px @ 18px em */
+  line-height: 1.536em;
+  /* 67.5px @ 43.945px em */
+  padding-bottom: 0.512em;
+  /* 22.5px @ 43.945px em */
   text-align: center;
   margin-bottom: 0.5919em;
   border: .2959em double;
   border-radius: .2959em;
   border-color: black;
-  background-color:black;
+  background-color: black;
   color: orange;
 }
-
 h2 {
   font-size: 1.866em;
-  color: orange ;  
-  line-height: 1.536em; 
-  padding-bottom: 0.512em; 
+  color: orange;
+  line-height: 1.536em;
+  padding-bottom: 0.512em;
 }
-
-#newsletter{
+#newsletter {
   border: .588em;
   border-radius: .588em;
   border-color: black;
   padding: .588em 0;
   margin-top: 1.2em;
 }
-
-ol{
- padding: 0 .6em;
- position: relative;
+ol {
+  padding: 0 .6em;
+  position: relative;
 }
-
-#input-email input
-{
+#input-email input {
   box-sizing: border-box;
   margin: 0;
   display: block;
@@ -67,44 +101,38 @@ ol{
   line-height: inherit;
   margin: .6em 0;
 }
-
-#input-frequent label{
+#input-frequent label {
   display: block;
 }
-
-#input-frequent input{
-  float: left; 
+#input-frequent input {
+  float: left;
 }
-
-#input-submit input{
+#input-submit input {
   display: block;
-  border:0 none;
-  border : solid;
+  border: 0 none;
+  border: solid;
   border-color: black;
   margin: .6em 0;
   background-color: lightgray;
   padding: .6em;
 }
-
-#background-img img{
+#background-img img {
   position: absolute;
   opacity: .5;
   pointer-events: none;
-    /* Set rules to fill background */
+  /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-	
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-	
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
 }
-/* ===== LAYOUT STYLES ===== */
 
+/* ===== LAYOUT STYLES ===== */
 
 input, text, email {
   width: 100%;
@@ -113,115 +141,115 @@ input, text, email {
   border-style: none;
   font-size: 0.9375em;
 }
-
 label, name {
   padding-top: 2.334em;
   padding-bottom: 0.9375em;
   float: left;
 }
-
 .button {
   line-height: .5em;
   font-weight: 320;
   text-align: center;
   background-color: gray;
   width: 8em;
-  padding-top:1em;
-  padding-bottom:1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-
 .input-submit:hover {
-   background-color: black;
-   text-align: center;
+  background-color: black;
+  text-align: center;
 }
-
 .circle {
   display: inline;
   float: left;
-  margin-left: 1.25em; /* 20px */
+  margin-left: 1.25em;
+  /* 20px */
 }
-
 .reasons-list {
-  margin-left: 1.25em; /* 18px */
-  margin-right: 1.25em; /* 18px */
-  line-height: 1.56em;  /* 25px */
+  margin-left: 1.25em;
+  /* 18px */
+  margin-right: 1.25em;
+  /* 18px */
+  line-height: 1.56em;
+  /* 25px */
   font-weight: 400;
-  font-size: 1.1875em; /* 19px */
-  padding-bottom: 1.625em; /* 26 px */
+  font-size: 1.1875em;
+  /* 19px */
+  padding-bottom: 1.625em;
+  /* 26 px */
   text-align: left;
 }
 
-
 /* ===== STATE STYLES ===== */
 
+
 /*Approval message*/
+
 #approvedx {
-	color: green;
+  color: green;
 }
 
 /*Error if you do not meet requirements*/
+
 #agex {
-	color: red;
+  color: red;
 }
 
 /* Mobile Phone */
-@media screen and (min-width: 10em) and (max-width: 30em)
-{
+
+@media screen and (min-width: 10em) and (max-width: 30em) {
   body {
     font-size: 0.876em;
     width: 100%;
   }
-
   header {
     text-align: left;
     margin-bottom: 1em;
   }
-
-  h1{
+  h1 {
     text-align: center;
     font-size: 2.2em;
   }
-  
   h2 {
     text-align: center;
     font-size: 1.9em;
   }
-
   img {
     width: 100%;
     height: auto;
   }
-  
   .circle {
-  display: inline;
-  float: left;
-  width: 10%;
+    display: inline;
+    float: left;
+    width: 10%;
   }
-  
   .reasons-list {
-  margin-left: 1.25em; /* 18px */
-  margin-right: 1.25em; /* 18px */
-  line-height: 1.56em;  /* 25px */
-  font-weight: 400;
-  font-size: 1.1875em; /* 19px */
-  padding-bottom: 1.625em; /* 26 px */
-  text-align: left;
+    margin-left: 1.25em;
+    /* 18px */
+    margin-right: 1.25em;
+    /* 18px */
+    line-height: 1.56em;
+    /* 25px */
+    font-weight: 400;
+    font-size: 1.1875em;
+    /* 19px */
+    padding-bottom: 1.625em;
+    /* 26 px */
+    text-align: left;
   }
-}  
-  
+}
+
 /* Tablet/Notebook(small) */
-@media screen and (min-width: 30em) and (max-width: 60em)
-{
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
   body {
     font-size: 1em;
     width: 100%;
   }
-
   header {
     text-align: center;
     margin-bottom: 1em;
   }
-
   h1, h2 {
     text-align: center;
     font-size: 1em;
