@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Weekly Revs</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-	<link rel="stylesheet" media="screen" href="./css/screen.css" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono:700" rel="stylesheet"> 
+  <title>Weekly Revs</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1.0,shrink-to-fit=no" name="viewport">
+  <link href="./css/screen.css" media="screen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono:700" rel="stylesheet">
 </head>
-
 <body>
-	<figure id="background-img"> 
-      <img src="img/carbon.JPG" /> 
-    </figure>
-		
-	<form id="newsletter" method="get" action="#null">
-		<h1>Sign Up for our News Letter!</h1>
- <h2>Why Join?</h2>
-      <ul class="reasons-list">
-        <li><img src="img/circle.png" alt="circle-icon" class="circle">Weekly news about the world of cars</li>
-        <li><img src="img/circle.png" alt="circle-icon" class="circle">News tailored to personal preferance</li>
-        <li><img src="img/circle.png" alt="circle-icon" class="circle">How-to tutorials</li>
-      </ul>
-      <h3>So, are YOU ready to enter the world of cars?</h3>
-
-		<ul>
-		<li id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="you@example.com" />
-      </li>
-      <li id="input-frequent">
-        <input type="radio" name="frequent" id="daily" value="daily" />
-        <label for="daily">Daily</label>
-				<input type="radio" name="frequent" id="weekly" value="weekly" />
-        <label for="weekly">Weekly</label>  
-      </li>
-			<li>
-				<label for="age">I am at least 18 years old: </label>
-				<input type="checkbox" id="yesage" name="age" value="yes"/> Yes
-			</li>
-
-			
-			<li>
-				<input type="submit" name="submit" id="submit" value="Submit!" onclick="checkAll();" />
-			</li>
-		</ul>
-	</form>
-	
-	<p id ="approvedx"></p>
-		<p id="agex"></p>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/site.js"></script>
+  <figure id="background-img">
+    <img src="img/carbon.JPG">
+  </figure>
+  <form action="#null" id="newsletter" method="get" name="newsletter">
+    <h1>Sign Up for our News Letter!</h1>
+    <h2>Why Join?</h2>
+    <ul class="reasons-list">
+      <li><img alt="circle-icon" class="circle" src="img/circle.png">Weekly news about the world of cars</li>
+      <li><img alt="circle-icon" class="circle" src="img/circle.png">News tailored to personal preferance</li>
+      <li><img alt="circle-icon" class="circle" src="img/circle.png">How-to tutorials</li>
+    </ul>
+    <h3>So, are YOU ready to enter the world of cars?</h3>
+    <ul>
+      <li id="input-email"><label for="email">Email</label> <input id="email" name="email" placeholder="you@example.com" type="email"></li>
+      <li id="input-frequent"><input id="daily" name="frequent" type="radio" value="daily"> <label for="daily">Daily</label> <input id="weekly" name="frequent" type="radio" value="weekly"> <label for="weekly">Weekly</label></li>
+      <li><label for="age">I am at least 18 years old:</label> <input id="yesage" name="age" type="checkbox" value="yes"> Yes</li>
+      <li><input id="submit" name="submit" onclick="checkAll();" type="submit" value="Submit!"></li>
+    </ul>
+  </form>
+  <p id="approvedx"></p>
+  <p id="agex"></p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script> 
+  <script src="js/site.js">
+  </script>
 </body>
-
 </html>
