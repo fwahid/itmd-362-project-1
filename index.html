@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Weekly Revs</title>
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0,shrink-to-fit=no" name="viewport">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
-  <link href="css/screen.css" media="screen" rel="stylesheet">
+	<title>Weekly Revs</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+	<link rel="stylesheet" media="screen" href="./css/screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Space+Mono:700" rel="stylesheet"> 
 </head>
+
 <body>
-  <main id="content">
-    <section>
-      <h1>Sign Up for Our News Letter!</h1>
-			<figure id="background-img"> 
+	<figure id="background-img"> 
       <img src="img/carbon.JPG" /> 
     </figure>
-      <h2>Why Join?</h2>
+		
+	<form id="newsletter" method="get" action="#null">
+		<h1>Sign Up for our News Letter!</h1>
+ <h2>Why Join?</h2>
       <ul class="reasons-list">
         <li><img src="img/circle.png" alt="circle-icon" class="circle">Weekly news about the world of cars</li>
         <li><img src="img/circle.png" alt="circle-icon" class="circle">News tailored to personal preferance</li>
         <li><img src="img/circle.png" alt="circle-icon" class="circle">How-to tutorials</li>
       </ul>
       <h3>So, are YOU ready to enter the world of cars?</h3>
-    </section>
-     <section id="sec-form">
-      <form action="#null" id="newsletter">
-    <ol>
-      <li id="input-email">
+		
+		
+		<p id ="approvedx"></p>
+		<p id="agex"></p>
+
+		<ul>
+		<li id="input-email">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="you@example.com" />
       </li>
@@ -33,19 +37,22 @@
         <input type="radio" name="frequent" id="daily" value="daily" />
         <label for="daily">Daily</label>
 				<input type="radio" name="frequent" id="weekly" value="weekly" />
-        <label for="weekly">Weekly</label>
-        <input type="radio" name="frequent" id="biweekly" value="biweekly" />
-        <label for="biweekly">Biweekly</label>   
+        <label for="weekly">Weekly</label>  
       </li>
-      <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe" />
-      </li>
-    </ol>
-  </form>
-    </section>
-		<footer>Copyright Fahad Wahid; All rights reserved</footer>
-  </main>
-  <script src="js/site.js">
-  </script>
+			<li>
+				<label for="age">I am at least 18 years old: </label>
+				<input type="checkbox" id="yesage" name="age" value="yes"/> Yes
+			</li>
+
+			
+			<li>
+				<input type="submit" name="submit" id="submit" value="Submit!" onclick="checkAll();" />
+			</li>
+		</ul>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/site.js"></script>
 </body>
+
 </html>
