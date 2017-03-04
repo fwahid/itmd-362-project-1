@@ -123,7 +123,6 @@ ol {
   pointer-events: none;
   /* Set rules to fill background */
   min-height: 100%;
-  
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
