@@ -103,6 +103,7 @@ ol {
 }
 #input-frequent label {
   display: block;
+  float: left;
 }
 #input-frequent input {
   float: left;
@@ -122,7 +123,7 @@ ol {
   pointer-events: none;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
@@ -141,7 +142,7 @@ input, text, email {
   border-style: none;
   font-size: 0.9375em;
 }
-label, name {
+label, name, age, frequent {
   padding-top: 2.334em;
   padding-bottom: 0.9375em;
   float: left;
@@ -158,6 +159,8 @@ label, name {
 .input-submit:hover {
   background-color: black;
   text-align: center;
+  border: .2959em double;
+  border-color: black;
 }
 .circle {
   display: inline;
@@ -185,13 +188,13 @@ label, name {
 
 /*Approval message*/
 
-#approvedx {
+#approved {
   color: green;
 }
 
 /*Error if you do not meet requirements*/
 
-#agex {
+#age1 {
   color: red;
 }
 
@@ -252,6 +255,6 @@ label, name {
   }
   h1, h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }

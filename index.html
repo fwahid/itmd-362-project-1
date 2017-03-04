@@ -20,15 +20,18 @@
       <li><img alt="circle-icon" class="circle" src="img/circle.png">How-to tutorials</li>
     </ul>
     <h3>So, are YOU ready to enter the world of cars?</h3>
-    <ul>
+    <ol>
       <li id="input-email"><label for="email">Email</label> <input id="email" name="email" placeholder="you@example.com" type="email"></li>
-      <li id="input-frequent"><input id="daily" name="frequent" type="radio" value="daily"> <label for="daily">Daily</label> <input id="weekly" name="frequent" type="radio" value="weekly"> <label for="weekly">Weekly</label></li>
-      <li><label for="age">I am at least 18 years old:</label> <input id="yesage" name="age" type="checkbox" value="yes"> Yes</li>
-      <li><input id="submit" name="submit" onclick="checkAll();" type="submit" value="Submit!"></li>
+    <ul id="input-frequent">
+			<li><input id="daily" name="frequent" type="radio" value="daily"><label for="daily">Daily</label></li>
+			<li><input id="weekly" name="frequent" type="radio" value="weekly"><label for="weekly">Weekly</label></li>
+			<li><label for="age">I am at least 18 years old:</label> <input id="yesage" name="age" type="checkbox"></li>
+		  <li><input id="submit" name="submit" onclick="checkAll();" type="submit" value="Submit!"></li>
     </ul>
+			</ol>
   </form>
-  <p id="approvedx"></p>
-  <p id="agex"></p>
+  <p id="approved"></p>
+  <p id="age1"></p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
   </script> 
   <script src="js/site.js">

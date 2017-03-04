@@ -7,16 +7,16 @@ $(document).ready(function() {
 
 function checkAll() {
   //Resets output from previous check
-  document.getElementById("approvedx").innerHTML = "";
-  document.getElementById("agex").innerHTML = "";
+  document.getElementById("approved").innerHTML = "";
+  document.getElementById("age1").innerHTML = "";
   var x = 0;
   // AGE CHECK
   if (document.getElementById("yesage").checked === false) {
-    document.getElementById("agex").innerHTML = "Please fill out all fields";
+    document.getElementById("age1").innerHTML = "Please fill out all fields";
     x = x + 1;
   }
   // APPROVAL
   if (x == 0) {
-    document.getElementById("approvedx").innerHTML = "Thank you for signing up!";
+    document.getElementById("approved").innerHTML = "Thank you for signing up!";
   }
 }
